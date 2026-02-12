@@ -2,7 +2,16 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 function Hello() {
-  return <h1>Hello, world!</h1>;
+  return (
+    <div>
+      <Header />
+      <h1 style={{ color: "blue" }}>Hello, React!</h1>
+      <Footer />
+    </div>
+  );
+}
+function Header() {
+  return <header>Welcome to my React App</header>;
 }
 function Footer() {
   return <footer>Copyright 2024</footer>;
@@ -10,6 +19,5 @@ function Footer() {
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Hello />
-    <Footer />
   </StrictMode>,
 );
