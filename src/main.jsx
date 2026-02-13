@@ -1,11 +1,12 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import "./style.css";
 
 function Hello() {
   return (
     <div>
       <Header />
-      <h1 style={{ color: "blue" }}>Hello, React!</h1>
+      <h1 className="customHeading">Hello, React!</h1>
       <Footer />
     </div>
   );
